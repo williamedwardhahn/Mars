@@ -39,6 +39,7 @@ Your team (2-3 Humans + AI) will be responsible for planning, designing, and pre
 * Misson Patch Logo
 * Mission Description
 * Mission Outline
+* Mission Details
 * Personnel Required
 * Technologies Needed
 * Equipment Needed
@@ -76,43 +77,41 @@ Present as group
 ## Prompts
 
 ```
-As a NASA systems engineer, your role involves condensing intricate Mars mission documentation into sharp, detail-intensive summaries for the team. The task requires an iterative refinement process, aimed at achieving the utmost precision and information density. Your summaries will evolve through a series of revisions, each maintaining the same length while progressively integrating additional critical technical entities.
+You will generate increasingly concise, entity-dense summaries of the above information.
 
-Perform the following 2 steps 5 times to evolve the summary:
+Repeat the following 2 steps 5 times.
 
-Step 1. Pinpoint 1-3 critical technical entities (";" delimited) from the Mars mission document missing in the previous summary iteration.
+Step 1. Identify 1-3 informative entities (";" delimited) from the article which are missing from the previously generated summary.
 
-Step 2. Formulate a revised summary of the same length as before, now including all prior details plus the newly identified entities.
+Step 2. Write a new, denser summary of identical length which covers every entity and detail from the previous summary plus the missing entities.
 
-Guidelines for the process:
+A missing entity is:
 
-- Begin with a broad summary (4-5 sentences, ~80 words), intentionally generalized, containing few specifics beyond the entities identified as missing.
+- relevant to the main story,
 
-- Enhance the value of every word with each iteration: modify the existing summary for clarity and incorporate the additional entities without increasing length.
+- specific yet concise (5 words or fewer),
 
-- Achieve brevity through synthesis of concepts, compression of details, and elimination of redundant wording.
+- novel (not in the previous summary),
 
-- Each revised summary must stand on its own, conveying complete understanding without reference to the original document.
+- faithful (present in the article),
 
-- Integrate new entities seamlessly into the evolving summary, ensuring they enhance the existing content.
+- anywhere (can be located anywhere in the article).
 
-- Preserve all previously mentioned entities, condensing only if necessary to include new critical details.
+Guidelines:
 
-The iterative summary refinement process is outlined in the following JSON structure:
+- The first summary should be long (4-5 sentences, ~80 words) yet highly non-specific, containing little information beyond the entities marked as missing. Use overly verbose language and fillers (e.g., "this article discusses") to reach ~80 words.
 
-```json
-[
-  {
-    "Missing_Entities": "Entity A; Entity B; Entity C",
-    "Denser_Summary": "The initial verbose summary, integrating the missing entities."
-  },
-  {
-    "Missing_Entities": "Entity D; Entity E",
-    "Denser_Summary": "Refined summary with the same word count, now encapsulating Entities A to E."
-  },
-  // Subsequent iterations follow the same structure
-]
+- Make every word count: rewrite the previous summary to improve flow and make space for additional entities.
 
+- Make space with fusion, compression, and removal of uninformative phrases like "the article discusses".
+
+- The summaries should become highly dense and concise yet self-contained, i.e., easily understood without the article.
+
+- Missing entities can appear anywhere in the new summary.
+
+- Never drop entities from the previous summary. If space cannot be made, add fewer new entities.
+
+Remember, use the exact same number of words for each summary. Answer in JSON. The JSON should be a list (length 5) of dictionaries whose keys are "Missing_Entities" and "Denser_Summary". 
 ```
 
 
