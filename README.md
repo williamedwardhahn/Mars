@@ -116,6 +116,12 @@ The iterative summary refinement process is outlined in the following JSON struc
 ```
 
 
+## Graphics Prompts
+
+```
+Create a mission badge in the style of NASA's emblems. The badge should feature a stylized spaceship or rocket as the central image, prominently placed against a backdrop of stars and a distant planet. Include the mission name 'Exploration Alpha' curved along the top inside edge of the circle in bold, sans-serif font. Add the year '2023' at the bottom inside edge of the circle in the same font. Use a color scheme of dark blue, white, and a touch of red. The design should evoke a sense of adventure and the thrill of space exploration. The badge should look polished, with clear details, and ready for print on a patch.
+```
+
 
 
 
