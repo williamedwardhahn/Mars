@@ -1,4 +1,5 @@
-# Mission to Mars - AI
+# Mission to Mars - AI Module
+## William Edward Hahn, PhD
 
 <img src="https://raw.githubusercontent.com/williamedwardhahn/Mars/main/DALL%C2%B7E%202023-11-02%2023.05.07%20-%20Photo%20of%20an%20astronaut%20in%20a%20modern%2C%20detailed%20spacesuit%20standing%20on%20the%20red%20rocky%20surface%20of%20Mars%2C%20facing%20a%20large%2C%20advanced%20rover%20vehicle%20in%20the%20backgro.png">
 
