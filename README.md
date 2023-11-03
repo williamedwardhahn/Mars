@@ -71,7 +71,9 @@ Present as group
 
 
 
-
+## Example AI Conversations
+[Meta Prompt] (https://chat.openai.com/share/277adf28-667b-4948-b095-ea00d78f0da2)
+[Space Farm] (https://chat.openai.com/share/cac1b11b-dc82-4924-a39f-fc264dd29fb2)
 
 
 ## Prompts
