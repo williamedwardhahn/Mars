@@ -1,8 +1,7 @@
 # Mission to Mars - AI
 
-## Mission Control Message Board
-[Link](https://docs.google.com/document/d/1UDWdsBD6Hcdut9nDTP2RYU1HarknOfxz2oujOIyYdDM/edit?usp=sharing)
-
+## Time Delay - Mission Control Message Board
+[Mission Control](https://docs.google.com/document/d/1UDWdsBD6Hcdut9nDTP2RYU1HarknOfxz2oujOIyYdDM/edit?usp=sharing)
 
 [Slides](https://docs.google.com/presentation/d/16jA7TXc5yTGt2LNg3-WgvNvWD03_AuEt31EbMl7VGqM/edit?usp=sharing)
 
